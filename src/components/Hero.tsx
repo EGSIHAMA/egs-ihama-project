@@ -3,7 +3,7 @@ import Button from "./button";
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col justify-center items-center bg-gray-100 text-center px-4 pt-20 bg-[url(/Hero-bg.jpg)] bg-cover bg-center relative">
+    <section className="w-full flex flex-col justify-center items-center bg-gray-100 text-center px-4 pt-20 bg-[url(/Hero-image2.jpg)] bg-cover bg-center relative">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black" style={{ opacity: 0.6 }} ></div>
       

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function About() {
@@ -15,9 +16,11 @@ export default function About() {
         </div>
 
         {/* Image Section */}
-        <div className="md:w-1/2">
-          <img
-            src="https://via.placeholder.com/500x300"
+        <div className="md:w-1/2 justify-center flex">
+          <Image
+            src="/About-image.jpg"
+            width={400}
+            height={400}
             alt="About Us"
             className="rounded-lg shadow-lg"
           />
