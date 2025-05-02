@@ -75,7 +75,7 @@ export default function About() {
         data-aos="zoom-in" // AOS animation for the quote section
       >
         <h4 className="text-xl md:text-3xl lg:text-4xl quoted-text italic text-center leading-10 tracking-wide md:leading-15 md:tracking-wider">
-          We don't just offer services.
+          We don&apos;t just offer services.
           <br /> We guide forward-thinkers on their transformation journey.
         </h4>
       </div>

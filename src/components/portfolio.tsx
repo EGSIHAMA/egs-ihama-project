@@ -1,15 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 const isValidUrl = (url: string): boolean => {
     try {
         const parsedUrl = new URL(url);
         // Allow only specific domains
-        const allowedDomains = ['egsihama.com', 'via.egsihama.com'];
+        const allowedDomains = ['egsihama.com', 'via.placeholder.com'];
         return (
             (parsedUrl.protocol === 'http:' || parsedUrl.protocol === 'https:') &&
             allowedDomains.includes(parsedUrl.hostname)
         );
-    } catch (error) {
+    } catch {
         return false; // Invalid URL
     }
 };
@@ -50,22 +51,30 @@ const Portfolio: React.FC = () => {
                     const isValid = isValidUrl(item.link);
 
                     return (
-                        <div className='portfolio-item portfolio-image portfolio-text'>
-                        <a
-                            key={item.id}
-                            href={isValid ? item.link : '#'} // Use '#' if the URL is invalid
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="portfolio-item"
+                        <div
+                            key={item.id} // Add the key prop here
+                            className="portfolio-item portfolio-image portfolio-text"
                         >
-                            <div className="portfolio-image">
-                                <img src={item.image} alt={item.text} />
-                            </div>
-                            <div className="portfolio-text">
-                                <h3>{item.text}</h3>
-                                <p>evrythin about the project will be here</p>
-                            </div>
-                        </a>
+                            <a
+                                href={isValid ? item.link : '#'} // Use '#' if the URL is invalid
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="portfolio-item"
+                            >
+                                <div className="portfolio-image">
+                                    <Image
+                                        src={item.image}
+                                        alt={item.text}
+                                        width={300} // Replace with actual width
+                                        height={200} // Replace with actual height
+                                        className="rounded-lg"
+                                    />
+                                </div>
+                                <div className="portfolio-text">
+                                    <h3>{item.text}</h3>
+                                    <p>Everything about the project will be here</p>
+                                </div>
+                            </a>
                         </div>
                     );
                 })}

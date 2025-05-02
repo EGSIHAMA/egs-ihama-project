@@ -73,7 +73,7 @@ export default function Services() {
           >
             <h3 className="text-xl font-semibold mb-4">Web Development</h3>
             <p className="text-gray-600 leading-relaxed !text-xl">
-            Your website isn't just design. It's your handshake, your pitch, your reputation. Like they say, first impressions matter.
+            Your website isn&apos;t just design. It&apos;s your handshake, your pitch, your reputation. Like they say, first impressions matter.
             </p>
             <div className="mt-4">
               <h4 className="text-lg font-semibold mb-2">What You Get?</h4>

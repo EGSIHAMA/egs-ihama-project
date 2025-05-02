@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "./button";
-import { heroVariants, overlayVariants } from "./animationVariants"; // Import variants
+import { overlayVariants } from "./animationVariants"; // Import variants
+import Image from "next/image";
 
 // Define child animation variants
 const childVariants = {
@@ -23,14 +24,25 @@ const containerVariants = {
 export default function Hero() {
   return (
     <motion.section
-      className="hero-section w-full flex flex-col justify-center items-center bg-gray-100 text-center px-4 py-20 bg-[url(/Hero-image2.jpg)] bg-cover bg-center relative"
+      className="hero-section w-full flex flex-col justify-center items-center text-center px-4 py-20 relative overflow-hidden"
       initial="hidden"
       animate="visible"
       transition={{ duration: 1, ease: "easeInOut" }} // Added ease effect
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/Hero-image2.jpg" // Path to your image
+          alt="Hero Background"
+          layout="fill" // Makes the image fill the container
+          objectFit="cover" // Ensures the image covers the container
+          quality={100} // Optional: Set image quality
+        />
+      </div>
+
       {/* Overlay */}
       <motion.div
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0 bg-black bg-opacity-50"
         variants={overlayVariants}
         initial="hidden"
         animate="visible"
@@ -49,7 +61,7 @@ export default function Hero() {
           className="text-4xl font-bold mb-2 text-white"
           variants={childVariants} // Child animation
         >
-          Ai is The Future & Business Automation <br /> is Here to Stay
+          Ai is The Future and Business Automation <br /> is Here to Stay
         </motion.h1>
         <motion.h2
           className="text-2xl font-bold my-0 text-white"
