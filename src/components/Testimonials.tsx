@@ -12,9 +12,9 @@ export default function Testimonials() {
     },
     {
       id: 2,
-      name: "Jane Smith",
-      description: "Marketing Manager, ABC Ltd",
-      content: "The team was professional and delivered great results.",
+      name: "Orlagh Magret",
+      description: "COO, Maison de Luxe",
+      content: "Thank you so much for your amazing service. You literally saved me hours of stress and manual work. Everything was done clearly and with so much ease. I really appreciate it.",
     },
     {
       id: 3,
@@ -24,9 +24,9 @@ export default function Testimonials() {
     },
     {
       id: 4,
-      name: "Emily Davis",
-      description: "Product Designer",
-      content: "The quality of work exceeded my expectations.",
+      name: "Quiet Escape Ltd",
+      description: "Director Business Development",
+      content: "Thank you so much. The support felt personal, detailed, and stress-free. I honestly do not know how I would have managed all that on my own. You saved me serious time and headache.",
     },
     {
       id: 5,

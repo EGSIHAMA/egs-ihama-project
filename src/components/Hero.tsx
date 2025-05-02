@@ -30,12 +30,13 @@ export default function Hero() {
       transition={{ duration: 1, ease: "easeInOut" }} // Added ease effect
     >
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10 overflow-hidden">
+      <div className="absolute inset-0 -z-10 overflow-hidden aspect-w-16 aspect-h-9">
         <Image
           src="/Hero-image2.jpg" // Path to your image
           alt="Hero Background"
           layout="fill" // Makes the image fill the container
           objectFit="cover" // Ensures the image covers the container
+          objectPosition="center" // Centers the image
           quality={100} // Optional: Set image quality
         />
       </div>
