@@ -395,3 +395,18 @@ p {
 html {
   scroll-behavior: smooth;
 }
+
+/* NO OVERFLOW */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}

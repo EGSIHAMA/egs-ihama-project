@@ -30,7 +30,7 @@ export default function Hero() {
       transition={{ duration: 1, ease: "easeInOut" }} // Added ease effect
     >
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 overflow-hidden">
         <Image
           src="/Hero-image2.jpg" // Path to your image
           alt="Hero Background"
