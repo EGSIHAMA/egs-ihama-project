@@ -1,24 +1,76 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Button from "./button";
+import { heroVariants, overlayVariants } from "./animationVariants"; // Import variants
+
+// Define child animation variants
+const childVariants = {
+  hidden: { opacity: 0, y: 20 }, // Start offscreen and transparent
+  visible: { opacity: 1, y: 0 }, // Animate to visible and on-screen
+};
+
+// Define parent container animation with staggerChildren
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.5, // Delay between child animations
+    },
+  },
+};
 
 export default function Hero() {
   return (
-    <section className="w-full flex flex-col justify-center items-center bg-gray-100 text-center px-4 py-20 bg-[url(/Hero-image2.jpg)] bg-cover bg-center relative">
+    <motion.section
+      className="hero-section w-full flex flex-col justify-center items-center bg-gray-100 text-center px-4 py-20 bg-[url(/Hero-image2.jpg)] bg-cover bg-center relative"
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 1, ease: "easeInOut" }} // Added ease effect
+    >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black" style={{ opacity: 0.6 }} ></div>
-      
-      <div className="w-full flex flex-col justify-center items-center text-shadow-2xl relative z-10">
-      <h1 className="text-4xl font-bold mb-4 text-white">Automate Your SME with N8N: Save Time and Cost, Boost Growth</h1>
-      <p className="text-lg text-gray-200 mb-6 max-w-xl">
-      Cost-effective N8N automations and expert consulting for e-commerce, real estate, and coaches. Start for $200.
-      </p>
-      <div className="flex gap-4">
-        <Button label="Book a Free Consultation" color="green" />
-        <Button label="Learn More" color="blue" />
-      </div>
+      <motion.div
+        className="absolute inset-0 bg-black"
+        variants={overlayVariants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 1, ease: "easeInOut" }} // Added ease effect
+      ></motion.div>
 
-      </div>
-    </section>
+      {/* Content */}
+      <motion.div
+        className="w-full flex flex-col justify-center items-center text-shadow-2xl relative z-10"
+        variants={containerVariants} // Parent container with staggerChildren
+        initial="hidden"
+        animate="visible"
+      >
+        {/* Child elements */}
+        <motion.h1
+          className="text-4xl font-bold mb-2 text-white"
+          variants={childVariants} // Child animation
+        >
+          Ai is The Future & Business Automation <br /> is Here to Stay
+        </motion.h1>
+        <motion.h2
+          className="text-2xl font-bold my-0 text-white"
+          variants={childVariants} // Child animation
+        >
+          Adapt or Be Left Behind
+        </motion.h2>
+        <motion.p
+          className="text-lg text-white mb-6 max-w-xl"
+          variants={childVariants} // Child animation
+        >
+          Cost-effective automations and expert consulting for SMEs and
+          Solopreneurs. Starting from $200.
+        </motion.p>
+        <motion.div
+          className="flex gap-4"
+          variants={childVariants} // Child animation
+        >
+          <Button label="Book a Free Consultation" color="customGreen" />
+        </motion.div>
+      </motion.div>
+    </motion.section>
   );
 }
-

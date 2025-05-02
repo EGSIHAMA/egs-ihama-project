@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Contact() {
+    // Initialize AOS
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true, // Whether animation should happen only once
+      });
+    }, []);
   return (
-    <section className="w-full bg-gray-100 py-8">
+    <section id="contact" className="w-full bg-gray-100 py-8" data-aos="fade-up">
       <div className="max-w-5xl mx-auto px-4 z-11">
         
         <h2 className="text-3xl font-bold mb-12 text-center">Contact Us</h2>
@@ -46,7 +55,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="200"
           >
             Send Message
           </button>

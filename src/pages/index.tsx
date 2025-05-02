@@ -4,15 +4,23 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Contact from "@/components/Contacts";
 import Footer from "@/components/Footer";
+import ToolsSlider from "@/components/ToolsSlider";
+import Testimonials from "@/components/Testimonials";
+import Portfolio from "@/components/portfolio";
+import WhatNext from "@/components/WhatNext";
 
 
 export default function Home() {
   return (
-    <main className="mt-16">
+    <main id="home" className="mt-16">
       <Navbar />
       <Hero />
+      <ToolsSlider />
       <About />
       <Services />
+      <Portfolio />
+      <Testimonials />
+      <WhatNext />
       <Contact />
       <Footer />
     </main>

@@ -6,10 +6,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <div className="text-2xl md:text-3xl font-bold">EGSiHAMA</div>
         <div className="flex space-x-6">
-          <a href="#" className="text-gray-700 hover:text-blue-500">Home</a>
-          <a href="#" className="text-gray-700 hover:text-blue-500">About</a>
-          <a href="#" className="text-gray-700 hover:text-blue-500">Services</a>
-          <a href="#" className="text-gray-700 hover:text-blue-500">Contact</a>
+          <a href="#home" className="text-gray-700 hover:text-blue-500">Home</a>
+          <a href="#about" className="text-gray-700 hover:text-blue-500">About</a>
+          <a href="#services" className="text-gray-700 hover:text-blue-500">Services</a>
+          <a href="#contact" className="text-gray-700 hover:text-blue-500">Contact</a>
         </div>
       </div>
     </nav>
