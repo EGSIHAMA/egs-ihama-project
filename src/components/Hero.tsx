@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Button from "./button";
 import { overlayVariants } from "./animationVariants"; // Import variants
 import Image from "next/image";
+import Link from "next/link";
 
 // Define child animation variants
 const childVariants = {
@@ -62,13 +63,13 @@ export default function Hero() {
           className="text-4xl font-bold mb-2 text-white"
           variants={childVariants} // Child animation
         >
-          Ai is The Future and Business Automation <br /> is Here to Stay
+          Cut 10hrs/week of busywork
         </motion.h1>
         <motion.h2
           className="text-2xl font-bold my-0 text-white"
           variants={childVariants} // Child animation
         >
-          Adapt or Be Left Behind
+          Automate Your Sales & Ops in 7days
         </motion.h2>
         <motion.p
           className="text-lg text-white mb-6 max-w-xl"
@@ -80,8 +81,9 @@ export default function Hero() {
         <motion.div
           className="flex gap-4"
           variants={childVariants} // Child animation
-        >
-          <Button label="Book a Free Consultation" color="customGreen" />
+        > <Link href="./AuditForm" passHref className="cursor-pointer">
+          <Button label="Get Your Free Automation Audit" color="customGreen" />
+          </Link>
         </motion.div>
       </motion.div>
     </motion.section>

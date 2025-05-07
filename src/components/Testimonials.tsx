@@ -51,7 +51,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="w-full bg-gray-100 py-12" data-aos="fade-up">
+    <section className="w-full bg-gray-100 py-12 my-20" data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8" data-aos="fade-up">
           Testimonials

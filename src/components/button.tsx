@@ -17,7 +17,7 @@ export default function Button({ label, color = "blue" }: ButtonProps) {
 
   return (
     <button
-      className={`px-6 py-2 rounded-md text-white font-medium transition ${colorClasses[color]}`}
+      className={`cursor-pointer px-6 py-2 rounded-md text-white font-medium transition ${colorClasses[color]}`}
     >
       {label}
     </button>

@@ -61,7 +61,7 @@ export default function Services() {
                   Additionally, we provide CRM Integrations and Custom SOPs as
                   premium addons
                 </p>
-                <div data-aos="fade-up" data-aos-delay="300"><Button label="Get Started" color="customBlue" /></div>
+                <div data-aos="fade-up" data-aos-delay="300"><Button label="Book a Free Audit" color="customBlue" /></div>
               </div>
             </div>
           </div>
