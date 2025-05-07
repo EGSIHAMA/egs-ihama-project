@@ -14,7 +14,7 @@ export default function Testimonials() {
       id: 2,
       name: "Orlagh Magret",
       description: "COO, Maison de Luxe",
-      content: "Thank you so much for your amazing service. You literally saved me hours of stress and manual work. Everything was done clearly and with so much ease. I really appreciate it.",
+      content: "Thank you so much for your amazing service. You literally saved me 18 hours a week of stress and manual work in my data entry tasks. Everything was done clearly and with so much ease. I really appreciate it.",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function Testimonials() {
       id: 4,
       name: "Quiet Escape Ltd",
       description: "Director Business Development",
-      content: "Thank you so much. The support felt personal, detailed, and stress-free. I honestly do not know how I would have managed all that on my own. You saved me serious time and headache.",
+      content: "Thank you so much. The support felt personal, detailed, and stress-free. I honestly do not know how I would have managed all that on my own. You saved me around 80hrs a month on client relations and feedback.",
     },
     {
       id: 5,

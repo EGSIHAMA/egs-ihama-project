@@ -25,12 +25,12 @@ export default function Services() {
             className="bg-white p-8 rounded-lg shadow hover:shadow-lg transition"
             data-aos="fade-up"
           >
-            <h3 className="text-xl font-semibold mb-4">Workflow Automations</h3>
+            <h1 className="text-xl font-semibold mb-4">Workflow Automations</h1>
             <p className="text-gray-600 leading-relaxed !text-xl">
             Time is your most valuable asset. Free it up and focus on growing your business, instead of getting stuck running it.
             </p>
             <div className="mt-4">
-              <h4 className="text-lg font-semibold mb-2">What You Get?</h4>
+              <h2 className="text-lg font-semibold mb-2">What You Get?</h2>
               <div className="card mt-2 text-normal leading-6.5 shadow-2xl p-6 bg-gray-50 rounded-lg" data-aos="fade-up" data-aos-delay="200">
                 <p className="text-left text-gray-600">
                   Our process includes the use of N8N for affordability and
@@ -71,12 +71,12 @@ export default function Services() {
             className="bg-white p-8 rounded-lg shadow hover:shadow-lg transition"
             data-aos="fade-up"
           >
-            <h3 className="text-xl font-semibold mb-4">Web Development</h3>
+            <h1 className="text-xl font-semibold mb-4">Web Development</h1>
             <p className="text-gray-600 leading-relaxed !text-xl">
             Your website isn&apos;t just design. It&apos;s your handshake, your pitch, your reputation. Like they say, first impressions matter.
             </p>
             <div className="mt-4">
-              <h4 className="text-lg font-semibold mb-2">What You Get?</h4>
+              <h2 className="text-lg font-semibold mb-2">What You Get?</h2>
               <div className="card mt-2 text-normal leading-6.5 shadow-2xl p-6 bg-gray-50 rounded-lg" data-aos="fade-up" data-aos-delay="200">
                 <p className="text-left text-gray-600">
                   We build both WordPress and custom websites depending on your
