@@ -21,7 +21,7 @@ export default function Header({ title }: HeaderProps) {
         />
         <meta name="keywords" content="Automation, n8n, Zapier, SMEs, Consulting, Websites" />
         <meta name="author" content="EGSiHAMA" />
-        <link rel="icon" href="/EGSiHAMA_Favicon.svg" />
+        <link rel="icon" href="/Favicon.svg" />
 
         {/* Title */}
         <title>{title}</title>
