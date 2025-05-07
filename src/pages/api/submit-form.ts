@@ -1,6 +1,6 @@
 // pages/api/submit-form.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
-const Airtable = require('airtable');
+import Airtable from 'airtable';
 
 const base = new Airtable({ apiKey: process.env.AIRTABLE_TOKEN }).base(process.env.AIRTABLE_BASE_ID!);
 
@@ -46,8 +46,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     ]);
 
     return res.status(200).json({ message: 'Success' });
-  } catch (error: any) {
-    console.error('Airtable error:', error);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('Airtable error:', error.message);
+    } else {
+      console.error('Airtable error:', error);
+    }
     return res.status(500).json({ message: 'Failed to submit' });
   }
 }
