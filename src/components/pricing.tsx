@@ -46,7 +46,7 @@ const pricingData = {
   ],
 };
 
-const PricingTable = ({ title, subtitle, subtitle2, plans, Icon }: { title: string; subtitle: string; subtitle2: string; plans: typeof pricingData.automation; Icon: any }) => (
+const PricingTable = ({ title, subtitle, subtitle2, plans, Icon }: { title: string; subtitle: string; subtitle2: string; plans: typeof pricingData.automation; Icon: React.ComponentType<React.SVGProps<SVGSVGElement>> }) => (
   <section className="py-12 px-4 md:px-16 bg-white text-gray-800">
     <div className="flex items-center justify-center gap-3 mb-2">
       <Icon className="w-15 h-15 text-blue-600" />
