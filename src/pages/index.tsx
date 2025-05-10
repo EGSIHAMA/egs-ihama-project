@@ -8,6 +8,7 @@ import ToolsSlider from "@/components/ToolsSlider";
 import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/portfolio";
 import WhatNext from "@/components/WhatNext";
+import PricingSection from "@/components/pricing";
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
       <Hero />
       <ToolsSlider />
       <About />
-      <Services />
+      <PricingSection /> 
       <Portfolio />
       <Testimonials />
       <WhatNext />
