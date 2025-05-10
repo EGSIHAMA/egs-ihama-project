@@ -148,6 +148,7 @@ p {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
+  max-height: auto;
   background-color: #ffffff;
   padding: 10px 0;
 }
@@ -161,7 +162,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 10px;
   font-size: 1.2rem; /* Default font size for medium screens */
   color: #333;
 }
@@ -201,10 +202,11 @@ p {
 /* Custom Slider  LOGOS*/
 
 .slider-logo {
-  width: 40px; /* Default size for medium screens */
-  height: 40px;
-  margin-right: 16px;
-  object-fit: contain; /* Ensures the logo fits within the dimensions */
+  width: 100%; /* Default size for medium screens */
+  max-height: auto;
+  margin-right: 50px;
+  margin-left: 50px;
+  object-fit: none; /* Ensures the logo fits within the dimensions */
 }
 
 /* Responsive Styles */
@@ -212,16 +214,16 @@ p {
 /* Small screens (mobile) */
 @media (max-width: 640px) {
   .slider-logo {
-    width: 30px; /* Smaller logos for mobile */
-    height: 30px;
+    width: 100px; /* Smaller logos for mobile */
+    height: 100px;
   }
 }
 
 /* Large screens (desktop) */
 @media (min-width: 1024px) {
   .slider-logo {
-    width: 50px; /* Larger logos for desktop */
-    height: 50px;
+    width: 150px; /* Larger logos for desktop */
+    height: 150px;
   }
 }
 

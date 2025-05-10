@@ -2,11 +2,11 @@ import React from "react";
 
 export default function ToolsSlider() {
   const tools = [
-    { name: "React", logo: "⚛️" },
-    { name: "Node.js", logo: "/next.svg" },
-    { name: "TypeScript", logo: "📘" },
-    { name: "Tailwind CSS", logo: "🎨" },
-    { name: "GitHub", logo: "🐙" },
+    { name: "React", logo: "sliderTools/reacttool.svg" },
+    { name: "Node.js", logo: "sliderTools/nodetool.svg" },
+    { name: "Egsihama", logo: "sliderTools/egs.svg" },
+    { name: "Vscode", logo: "sliderTools/vsctool.svg"},
+    { name: "Zapier", logo: "sliderTools/zapiertool.svg" }
   ];
 
   return (
